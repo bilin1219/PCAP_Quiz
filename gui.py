@@ -1,10 +1,28 @@
-# Define the questions, correct answers, and possible answers
+"""
+This script implements a GUI for a PCAP (Certified Associate in Python Programming) quiz.
+It uses the Streamlit library to create a web-based interface for the quiz.
+
+The quiz questions, correct answers, and possible answers are imported from the 'quiz' module in 'sample_01.py'.
+
+The script initializes the session state variables and displays the quiz instructions and topics.
+
+For each question, it displays the question number, progress bar, and the question itself.
+If the question has code or a directive, it is also displayed.
+The user can select their answer from the possible answers provided.
+When the user clicks the 'Next' button, the script checks the user's answer, updates the session state variables,
+and moves to the next question.
+
+After all questions have been answered, the script displays the user's score and the cumulative percentage of correct answers.
+"""
+
 from sample_01 import quiz
 import streamlit as st
 import time
 
+# Set Streamlit page configuration
 st.set_page_config(page_title="PCAP QUIZ", page_icon=":tada:", layout="wide")
 
+# Display quiz instructions and topics
 with st.container():
     st.subheader("Exam: PCAP – Certified Associate in Python Programming")
     st.write("""
@@ -24,7 +42,6 @@ with st.container():
     """)
     st.write("[Click here to learn more >](https://pythoninstitute.org/pcap)")
 
-
 # Initialize the session state
 if 'question_num' not in st.session_state:
     st.session_state.question_num = 1
@@ -37,10 +54,10 @@ if 'exam_start_time' not in st.session_state:
 if 'exam_duration' not in st.session_state:
     st.session_state.exam_duration = (65 + 10) * 60
 
+# Check if there are more questions to display
 if st.session_state.question_num in quiz.keys():
     # Get the question, correct answer, and possible answers for the current question
     question = quiz[st.session_state.question_num]
-    # question_text, question_code, question_directive, correct_answer, possible_answers =
 
     # Display the question
     with st.container():
