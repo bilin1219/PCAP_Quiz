@@ -1,4 +1,26 @@
 from quiz_struct import QuizQuestion
+"""
+This file contains a dictionary of quiz questions and their corresponding answers.
+Each question is represented by an instance of the QuizQuestion class.
+"""
+
+quiz_header = "Exam: PCAP – Certified Associate in Python Programming"
+quiz_description = """
+Exam version: PCAP-31-02  
+Exam duration: 65 minutes (exam items) + 10 minutes  
+Number of questions: 40  
+Format: Single-choice and multiple-choice questions  
+Passing score: 70% (28/40 points)  
+Exam item weight: each question is worth 1 point
+"""
+quiz_information = """
+This Sample Test covers the following topics:  
+1. Control and Evaluations (questions 1-10, 25%)  
+2. Data Aggregates (questions 11-20, 25%)  
+3. Functions and Modules (questions 21-30, 25%)  
+4. Classes, Objects, and Exceptions (questions 31-40, 25%)
+"""
+quiz_link = "[Click here to learn more >](https://pythoninstitute.org/pcap)"
 
 # Define the questions, correct answers, and possible answers
 quiz = {1: QuizQuestion('''The following expression''',

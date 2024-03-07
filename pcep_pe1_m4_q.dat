@@ -1,0 +1,149 @@
+1. Which of the following lines properly starts a function using two parameters, both withzeroed default values?
+A. def fun (a=b=0) :
+A. def fun (a=0, b=0) :
+A. fun fun (a=0, b) :
+A. fun fun (a, b=0) :
+--------------------------
+2. What is the output of the following snippet?
+def fun(x): if x % 2 == 0: return 1 else: returnprint(fun(fun(2)) + 1)
+A. 1
+A. None
+A. the code will cause a runtime error
+A. 2
+--------------------------
+3. Which of the following statement are true? (Select two answers)
+A. The None value can be assigned to variables
+A. The None value cannot be used outside functions
+A. The None value can be used as an argument of arithmetic operators
+A. The None value can be compared with variables
+--------------------------
+4. The following snippet:
+def func_1(a): return a ** adef func_2(a): return func_1(a) * func_1(a)print(func_2(2))
+A. will output 2
+A. will output 16
+A. will output 4
+A. is erroneous
+--------------------------
+5. What code would you insert instead of the comment to obtain the expected output? Expected output: abc
+Code: dictionary = {}my_list = ['a', 'b', 'c', 'd']for i in range(len(my_list) - 1): dictionary[my_list[i]] = (my_list[i], )for i in sorted(dictionary.key()): k = dictionary[i] # Insert your code here.
+A. print(k["0"])
+A. print(k['0'])
+A. print(k)
+A. print(k[0])
+--------------------------
+6. The following snippet:
+def func(a, b): return a ** aprint(func(2))
+A. is erroneous
+A. will output 2
+A. will output 4
+A. will return None
+--------------------------
+7. What is the output of the following snippet?
+def fun(inp=2, out=3): return inp * outprint(fn(out =2))
+A. 2
+A. 6
+A. 4
+A. the snippet is erroneous
+--------------------------
+8. Assuming that my_tuple is a correctly created tuple, the fact that tuples are immutablemeans that the following instruction:
+my_tuple[1] = my_tuple[1] + my_tuple[0]
+A. can be executed if and only if the tuple contains at least two elements
+A. is illegal
+A. may be illegal if the tuple contains string
+A. is fully correct
+--------------------------
+9. A function defined in the following way: (Select two answers)
+def function(x=0): return x
+A. may be invoked with exactly one argument
+A. must be invoked with exactly one argument
+A. must be invoked without any argument
+A. may be invoked without any argument
+--------------------------
+10. What is the output o the following snippet?
+def fun(x): x += 1 return xx = 2x = fun(x + 1)print(x)
+A. 3
+A. 5
+A. the code erroneous
+A. 4
+--------------------------
+11. What is the output of the following snippet?
+my_list = ['Mary', 'had', 'a', 'little', 'lamb']def my_list(my_list): del my_list[3] mylist[3] = 'ram' print(my_list(my_list))
+A. [‘Mary’, ‘had’, ‘a’ ,’lamb’]
+A. [‘Mary’, ‘had’, ‘a’ ,’ram’]
+A. [‘Mary’, ‘had’, ‘a’ ,’little’, ‘lamb’]
+A. no output, the snippet is erroneous
+--------------------------
+12. What is the output of the following snippet?
+def f(x): if x == 0: return 0 return x + f(x - 1)print(f(3))
+A. 6
+A. the code is erroneous
+A. 1
+A. 3
+--------------------------
+13. What is the output of the following snippet?
+tup = (1, 2, 4, 8)tup = tup[1:-1]tup = tup[0]print(tup)
+A. the snippet is erroneous
+A. (12)
+A. (2, )
+A. 2
+--------------------------
+14. What is the output of the following snippet?
+def fun(x): global y y = x * x return yfun(2)print(y)
+A. the code will cause a runtime error
+A. 4
+A. None
+A. 2
+--------------------------
+15. What is the output of the following snippet?
+dictionary = {'one': 'two', 'three': 'one', 'two': 'three'}v = dictionary['one']for k in range(len(dictionary)): v = dictionary[v]print(v)
+A. three
+A. one
+A. (‘one’, ‘two’, ‘three’)
+A. two
+--------------------------
+16. Select the true statements about the try-exception block in relation to the followingexample. (Select two answers.)
+try: # Some code is here...except: # some code is here...
+A. if you suspect that a snippet may raise an exception, you should place it in the try block
+A. The code that follows the try statement will be executed if the code in the except clause runs into an error.
+A. The code that follows the except statement will be executed if the code in the try clause runs into an error.
+A. If there is a syntax error in code located in the try block, the except branch will not handle it, and a SyntaxError exception will be raised instead.
+--------------------------
+17. Which one if the following lines properly starts a parameterless function definition?
+A. def fun:
+A. def fun():
+A. function fun():
+A. fun function():
+--------------------------
+18. What is the output of the following snippet?
+def fun(x, y, x): return x + 2 * y + 3 * zprint(fun(0, z=1, y=3))
+A. 9
+A. 0
+A. 3
+A. the snippet is erroneous
+--------------------------
+19. What is the output of the following code?
+try: value = input("Enter a value: ") print(value/value)except: print("Bad input...")except ZeroDivisionError: print("Very bad input...")except TypeError: print("Very very bad input...")except: print("Booo!")
+A. Booo!
+A. Bad input...
+A. Very very bad input...
+A. Very bad input...
+--------------------------
+20. What is the output of the following snippet?
+def ant(): print(var + 1, end ='')var = 1any()print(var)
+A. 12
+A. 22
+A. 11
+A. 21
+--------------------------
+21. The fact that tuples belong to sequence types means that:
+A. they can be indexed and sliced like lists
+A. they can be extended using the .append() method
+A. they can be modified using the del instruction
+A. they are actually lists
+--------------------------
+22. A built-in function is a function which:
+A. is hidden from programmers
+A. has been placed within your code by another programmer
+A. has to be imported before use
+A. comes with Python, ans is an integer part of Python
+--------------------------

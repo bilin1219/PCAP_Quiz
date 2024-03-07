@@ -1,3 +1,6 @@
+import sample_01
+
+
 class QuizQuestion:
     def __init__(self, question, code, directive, output, answer_list, correct=None):
         self.question = question
@@ -8,6 +11,14 @@ class QuizQuestion:
         self.correct_answers = correct
 
     def __str__(self):
+        """
+        Returns a string representation of the Quiz object.
+
+        The string includes the question, code, directive, output, answer list, and correct answer list (if available).
+
+        Returns:
+            str: A string representation of the Quiz object.
+        """
         fields = [
             f"Question: {self.question}",
             f"Code: {self.code}" if self.code is not None else "",
@@ -19,6 +30,9 @@ class QuizQuestion:
         return "\n".join(field for field in fields if field)
 
     def __repr__(self):
+        """
+        Returns a string representation of the QuizQuestion object.
+        """
         fields = [
             f"QuizQuestion('''{self.question}'''",
             f"'''{self.code}'''" if self.code is not None else "None",
@@ -35,17 +49,35 @@ class QuizQuestion:
         self.correct_answers = answers
 
     def verify_answers(self, answers):
-        if self.correct_answers is None or isinstance(answers, list) is False:
-            return 0
+            """
+            Verifies the given answers against the correct answers and returns the score as a fraction or whole number.
 
-        if len(answers) == len(self.answer_list):
-            # if the number of answers is the same as the number of possible answers, then user selected all the answers
-            return 0
+            Args:
+                answers (list): A list of user-selected answers.
 
-        correct = 0
-        for answer in answers:
-            if answer in self.correct_answers:
-                correct += 1
+            Returns:
+                float: The score as a fraction or whole number.
+            """
+            if self.correct_answers is None or isinstance(answers, list) is False:
+                return 0
 
-        # fraction or whole number?
-        return correct / len(self.correct_answers)
+            if len(answers) == len(self.answer_list):
+                # if the number of answers is the same as the number of possible answers, then user selected all the answers
+                return 0
+
+            correct = 0
+            for answer in answers:
+                if answer in self.correct_answers:
+                    correct += 1
+
+            # fraction or whole number?
+            return correct / len(self.correct_answers)
+
+
+class Quiz:
+    def __init__(self, quiz_header, quiz_description, quiz_information, quiz_link, quiz):
+        self.quiz_header = quiz_header
+        self.quiz_description = quiz_description
+        self.quiz_information = quiz_information
+        self.quiz_link = quiz_link
+        self.quiz = quiz

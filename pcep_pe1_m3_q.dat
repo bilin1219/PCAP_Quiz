@@ -1,0 +1,139 @@
+1. How many stars (*) will the following snippet send to the console?
+i = 0while i <= 3 : i += 2 print("+")
+A. three
+A. zero
+A. one
+A. two
+----------------------
+2. After execution of the following snippet, the sum of the all vals elements will equal to:
+vals = [0, 1, 2]vals.insert(0, 1)del vals[1]
+A. 3
+A. 4
+A. 2
+A. 5
+----------------------
+3. How many hashes(#) will the following snippet send to the console?
+for i in range(1): print("#")else: print("#")
+A. zero
+A. three
+A. two
+A. one
+----------------------
+4. How many hashes(#) will the following snippet send to the console?
+var = 0while var < 6: var += 1 if var % 2 == 0: continue print("#")
+A. zero
+A. three
+A. two
+A. one
+----------------------
+5. What is the output of the following snippet?
+my_list = [3, 1, -2]print(my_list[my_list(-1)])
+A. -2
+A. -1
+A. 3
+A. 1
+----------------------
+6. How many stars(#) will the following snippet send to the console?
+var = 0while i <= 5: i += 1 if vi % 2 == 0: break print("*")
+A. three
+A. two
+A. one
+A. zero
+----------------------
+7. What is the output of the following snippet?
+my_list = [1, 2, 3, 4]print(my_list[-3:-2])
+A. [2, 3]
+A. [2, 3, 4]
+A. []
+A. [2]
+----------------------
+8. How many hashes(#) will the following snippet send to the console?
+var = 1while var < 10: print("#") var = var << 1
+A. two
+A. eight
+A. four
+A. one
+----------------------
+9. What is the output of the following snippet?
+my_list_1 = [1, 2, 3]my_list_2 = []for v in my_list_1: my_list_2.insert(0, v) print(my_list_2)
+A. [1, 2, 3]
+A. [3, 2, 1]
+A. [3, 3, 3]
+A. [1, 1, 1]
+----------------------
+10. Take a look at the snippet, and choose the true statements: (Select two answers)
+nums = [1, 2, 3]vals = numsdel vals[1:2]
+A. nums is longer than vals
+A. nums and vals are of the same length
+A. nums and vals refer to the same list
+A. nums is replicated and assigned to vals
+----------------------
+11. What is the output of the following snippet?
+my_list = [[0, 1, 2, 3] for i in rage(2)]print(my_list[2][0])
+A. 1
+A. 2
+A. 0
+A. the snippet will cause a runtime error
+----------------------
+12. What value will be assigned to the x variable?
+z = 10y = 0x = y < z and z > y or y > z and z < y
+A. 1
+A. 0
+A. True
+A. False
+----------------------
+13. Which of the following sentences are true? (Select two answers)
+A. nums = [1, 2, 3]vals = nums[-1:-2]
+A. nums and vals are two different lists
+A. vals is longer than nums
+A. nums and vals are of the same length
+A. nums is longer than vals
+----------------------
+14. What is the output of the following snippet?
+a = 1b = 0c = a & bd = a | be = a ^ bprint(c + d + e)
+A. 1
+A. 0
+A. 3
+A. 2
+----------------------
+15. What is the output of the following snippet?
+my_list = [1, 2, 3]for v in range(len(my_list)): my_list.insert(1, my_list[v])print(my_list)
+A. [1, 2, 3, 1, 2, 3]
+A. [1, 2, 3, 3, 2, 1]
+A. [1, 1, 1, 1, 2, 3]
+A. [3, 2, 1, 1, 2, 3]
+----------------------
+16. An operator able to check whether two values are equal is code as:
+A. =
+A. !=
+A. ==
+A. ===
+----------------------
+17. The second assignment:
+vals = [0, 1, 2]vals[0], vlas[2] = vals[2], vals[0]
+A. doesn’t change the list
+A. reverses the list
+A. shortens the list
+A. extends the list
+----------------------
+18. What is the output of the following snippet?
+t = [[3-i for i in range (3)] for j in range (3)]s = 0 for i in range(3): s += t[i][i]print(s)
+A. 4
+A. 7
+A. 02
+A. 6
+----------------------
+19. The value eventually assigned to x is equal to :
+x = 1x = x == x
+A. 0
+A. 1
+A. True
+A. False
+----------------------
+20. How many elements does the my_list list contain?
+my_list = [i for i in range(-1, 2)]
+A. two
+A. three
+A. four
+A. one
+----------------------

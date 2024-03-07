@@ -1,0 +1,136 @@
+1. The \n digraph forces the print() function to:
+stop its execution
+duplicate the character next to the digraph
+break the output line
+output exactly two characters: \ and n
+--------------
+2. What is the output of the following snippet if the user enters two lines containing 2 and 4respectively?
+x = int(input())y = int(intpu())x = x / yy = y / xprint(y)
+A. 8.0
+A. the code will cause a runtime error
+A. 4.0
+A. 2.0
+--------------
+3. What is the output of the following snippet?
+z = y = x = 1print(x, y, z, sep='*')
+A. 1 1 1
+A. x*y*z
+A. 1*1*1
+A. x y z
+--------------
+4. What is the output of the following snippet?
+x = 1 / 2 + 3 // 3 + 4 **2print(x)
+A. 8.5
+A. 0
+A. 17.5
+A. 17
+--------------
+5. What is the output of the following snippet if the user enter two lines containing 2 and 4 respectively?
+x = int(input())y = int(input())print(x + y)
+A. 2
+A. 24
+A. 4
+A. 6
+--------------
+6. Which of the following variable names are illegal? (Select two answers)
+A. true
+A. and
+A. TRUE
+A. True
+--------------
+7. The result of the following division:
+1 / 1
+A. is equal to 1.0
+A. is equal to
+A. 1
+A. cannot be evaluated
+A. cannot be predicted
+--------------
+8. The ** operator:
+A. does not exist
+A. performs duplicated multiplication
+A. performs exponentiation
+A. perform floating-point multiplication
+--------------
+9. What is the output of the following snippet?
+y = 2 + 3 * 5.
+print(Y)
+A. the snippet will cause an execution error
+A. 25.
+A. 17
+A. 17.0
+--------------
+10. What is the output of the following snippet?
+x = 1y = 2z = xx = yy = z
+print (x, y)
+A. 1 2
+A. 1 1
+A. 2 2
+A. 2 2
+--------------
+11. The 80 prefix means that the number after it is denoted as:
+A. hexadecimal
+A. octal
+A. decimal
+A. binary
+--------------
+12. The value twenty point twelve times ten raised to the power of eight should be written as:
+A. 20.12*10^8
+A. 20E12.8
+A. 20.12E8.0
+A. 20.12Eo
+--------------
+13. What is the output of the following snippet if the user enter two lines containing 2 and 4 respectively?
+x = int(intput())y = int(intput())x = x // yy = y //xprint(y)
+A. the code will cause a runtime error
+A. 2.0
+A. 8.0
+A. 4.0
+--------------
+14. What is the output of the following snippet if the user enter two lines containing 11 and 4 respectively?
+x = int(intput()) y = int(intput()) x = x % yx = x % yy = y % xprint(y)
+A. 3
+A. 2
+A. 4
+A. 1
+--------------
+15. The print() function can output values of:
+A. not more than five arguments
+A. any number of arguments (including zero)
+A. any number of arguments (excluding zero)
+A. just one argument
+--------------
+16. What is the output of the following snippet if the user enters two lines containing 3 and 6 respectively?
+x = input()y = int(input())print(x * y)
+A. 333333
+A. 36
+A. 18
+A. 666
+--------------
+17. Left-sided binding determines that the result of the following expression:
+1 // 2 * 3
+is equal to :
+A. 0.0
+A. 0
+A. 4.5
+A. 0.166666666666666666
+--------------
+18. Which of the following statement are true? (Select two answers)
+A. The result of the / operator is always an integer value.
+A. The ** operator uses right-sided binding.
+A. Adding precedes multiplication.
+A. The right argument of the % operator cannot be zero.
+--------------
+19. What is the output of the following snippet if the user enters two lines containing 2 and 4 respectively?
+x = input()y = input()print(x + y)
+A. 4
+A. 2
+A. 6
+A. 24
+--------------
+20. The meaning of the keyword parameter is determined by:
+A. its value
+A. the argument’s name specified along with is value
+A. its connection with exiting variables
+A. its position within the argument list
+--------------
