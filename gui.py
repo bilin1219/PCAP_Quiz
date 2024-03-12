@@ -23,7 +23,6 @@ import available_exams
 # Set Streamlit page configuration
 st.set_page_config(page_title="PCAP QUIZ", page_icon=":tada:", layout="wide")
 
-<<<<<<< HEAD
 # Display available exams
 with st.container():
     exam_name = st.selectbox('Which test would you like to do today?', available_exams.AvailableExams.keys())
@@ -31,27 +30,6 @@ with st.container():
     if 'exam_name' in st.session_state and st.session_state.exam_name != exam_name:
         st.session_state.exam_name = exam_name
         st.rerun()
-=======
-# Display quiz instructions and topics
-with st.container():
-    st.subheader("Exam: PCAP – Certified Associate in Python Programming")
-    st.write("""
-    Exam version: PCAP-31-02  
-    Exam duration: 65 minutes (exam items) + 10 minutes  
-    Number of questions: 40  
-    Format: Single-choice and multiple-choice questions  
-    Passing score: 70% (28/40 points)  
-    Exam item weight: each question is worth 1 point
-    """)
-    st.write("""
-    This Sample Test covers the following topics:  
-    1. Control and Evaluations (questions 1-10, 25%)  
-    2. Data Aggregates (questions 11-20, 25%)  
-    3. Functions and Modules (questions 21-30, 25%)  
-    4. Classes, Objects, and Exceptions (questions 31-40, 25%)
-    """)
-    st.write("[Click here to learn more >](https://pythoninstitute.org/pcap)")
->>>>>>> 167032c1f2ff1d675e6e0805e6f9197f8e1439e8
 
 # Initialize the session state
 if 'exam_name' not in st.session_state:
@@ -67,7 +45,6 @@ if 'exam_start_time' not in st.session_state:
 if 'exam_duration' not in st.session_state:
     st.session_state.exam_duration = (65 + 10) * 60
 
-<<<<<<< HEAD
 exam = available_exams.AvailableExams[st.session_state.exam_name]
 quiz_header = exam.quiz_header
 quiz_description = exam.quiz_description
@@ -83,9 +60,6 @@ with st.container():
     st.write(quiz_link)
     st.write("---")
 
-=======
-# Check if there are more questions to display
->>>>>>> 167032c1f2ff1d675e6e0805e6f9197f8e1439e8
 if st.session_state.question_num in quiz.keys():
     # Get the question, correct answer, and possible answers for the current question
     question = quiz[st.session_state.question_num]
