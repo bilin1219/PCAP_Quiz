@@ -22,7 +22,10 @@ This Sample Test covers the following topics:
 """
 quiz_link = "[Click here to learn more >](https://pythoninstitute.org/pcap)"
 
-# Define the questions, correct answers, and possible answers
+"""
+This file contains a dictionary of quiz questions and their corresponding answers.
+Each question is represented by an instance of the QuizQuestion class.
+"""
 quiz = {1: QuizQuestion('''The following expression''',
                         '''2 ** 3 ** 2 ** 1''',
                         '''is:''',

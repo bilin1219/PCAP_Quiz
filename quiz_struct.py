@@ -72,6 +72,7 @@ class QuizQuestion:
 
             # fraction or whole number?
             return correct / len(self.correct_answers)
+<<<<<<< HEAD
 
 
 class Quiz:
@@ -81,3 +82,5 @@ class Quiz:
         self.quiz_information = quiz_information
         self.quiz_link = quiz_link
         self.quiz = quiz
+=======
+>>>>>>> 167032c1f2ff1d675e6e0805e6f9197f8e1439e8
