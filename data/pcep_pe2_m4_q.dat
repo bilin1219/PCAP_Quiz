@@ -1,0 +1,112 @@
+1. Which of the following open modes allow you to perform read operations? (Select twoanswers)
+A. r
+A. a
+A. r+
+A. w
+----------------------------
+2. What is the expected result of executing the code?
+def I():s = 'abcdef' for c in s[::2]: yield cfor x in I(): print(x, end=' ')
+A. It will print abcdef
+A. It will print an empty line
+A. It will print bdf
+A. It will print ace
+----------------------------
+3. What keyword would you use to define an anonymous function?
+A. afun
+A. lambda
+A. def
+A. yield
+----------------------------
+4. Select the true statements. (Select two answers)
+A. The lambda function can accept a maximum of two arguments
+A. The lambda function can evaluate multiple expressions
+A. The lambda function can evaluate only one expressrion
+A. The lambda function can accept any number of arguments
+----------------------------
+5. Look at the code below:
+my_list = [1, 2, 3]# insert line of code here.print(foo)
+Which snippet would you insert in order for the program to output the following result(tuple):
+1, 4, 27
+A. foo = list(map(lambda x: x**x, my_list))
+A. foo = tuple(map(lambda x: x*x, my_list))
+A. foo = list(map(lambda x: x*x, my_list))
+A. foo = tuple(map(lambda x: x**x, my_list))
+----------------------------
+6. What is the expected output of the following code?
+from datetime import datedate_1 = date(1992, 1, 16)date_2 = date(1992, 2, 5) print(date_1 - date_2)
+A. 345
+A. 345 days
+A. 345, 0:00:00
+A. 345 days, 0:00:00
+----------------------------
+7. Which program will produce the following output:
+Mo Tu We Th Fr Sa Su
+A. import calendar print(calendar.weekheader(3))
+A. import calendar print(calendar.weekheader(2))
+A. import calendar print(calendar.week)
+A. import calendarprint(calendar.weekheader())
+----------------------------
+8. What is the expected result of executing the following code?
+def o(p): def q(): return'*' *p return qr = o(1) s = o(2)print(r9) + s())
+A. it will print ***
+A. it will print ***
+A. it will print **
+A. it will print *
+----------------------------
+9. Look at the code below:
+my_tuple = (0, 1, 2. 3, 4, 5, 6)# Insert line of code here.print(foo)
+Which snippet would you insert in order for the program to output the following result(list):
+[2, 3, 4, 5, 6]
+A. foo = list(filter(lambda x: x-0 and x-1, my_tuple))
+A. foo - list(filter(lambda x: x==0 and x==1, my_tuple))
+A. foo = tuple(filter(lambda x: x>1, my_tuple))
+A. foo = tuple(filter(lambda x: x-0 and x-1, my_tuple))
+----------------------------
+10. What is the expected result of executing the following code?
+def fun(n): s = '+' for i in range(n): s += s yield sfor x in fun(2): print(x, end='')
+A. It will print +++
+A. It will print ++
+A. It will print ++++++
+A. It will print +
+----------------------------
+11. What is the meaning of the value represented by errno.EEXITS ?
+A. File doesn’t exist
+A. Bad file number
+A. Permission denied
+A. File exists
+----------------------------
+12. What is the expected result of the following code?
+b = bytearray(3)print(b)
+A. 3
+A. bytearray(b'\x00\x00\x00')
+A. bytearray(0, 0, 0)
+A. bytearray(b'3')
+----------------------------
+13. What is the expected output of the following code?
+from datetime import datetimedatetime = datetime(2019, 11, 27, 11, 27, 22)perint(datetime.strftime('%y/%B/%d %H:%M:%s'))
+A. 19/November/27 11:27:22
+A. 2019/Nov/27 11:27:22
+A. 2019/11/27 11:27:22
+A. 19/11/27 11:27:22
+----------------------------
+14. What is the expected output of the following code?
+import os os.mkdir('pictures')os.chdir('pictures')os.mkdir('thumbnails')os.chdir('thumbnails')os.mkdir('tmp')os.chdir('../')print(os.getcwd())
+A. The orint to the thumbnails directory
+A. The path to the pitcures directory
+A. The path to the tmp directory
+A. The path to the root directory
+----------------------------
+15. What is the expected output of the following code?
+import osos.mkdir('thumbnails')os.chdir('thumbnails')sizes = ['small', 'medium', 'large']for size in sizes: os.mkdir(size)print(os.listdir())
+A. ['.', '..', 'large', 'small', 'medium']
+A. []
+A. ['.', 'large', 'small', 'medium']
+A. ['large', 'small', 'medium']
+----------------------------
+16. What is the expected result of the following code?
+import calendarc = calendar.Calendar()for weekday in c.iterweekdays(): print(weekday, end="")
+A. 1 2 3 4 5 6 7
+A. Su Mo Tu We Th Fr Sa
+A. 0 1 2 3 4 5 6 7
+A. Mo Tu We Th Fr Sa Su
+----------------------------

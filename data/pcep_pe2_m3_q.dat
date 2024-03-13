@@ -1,0 +1,111 @@
+1. What will be the result of executing the following code?
+class Ex(Exception): def_init_(self,msg): Exception._init_(self,msg + msg) self.args = (msg,)try: raise Ex('ex')except Ex as e: print(e)except Exception as e: print(e)
+A. it will print ex
+A. it will print exex
+A. it will print an empty line
+A. it will raise an unhandled exception
+-------------------------
+2. A data structure described as LIFO is actually a:
+A. list
+A. stack
+A. heap
+A. tree
+-------------------------
+3. What will be the output of the following code?
+class A: A = 1print(hasattr(A, 'A'))
+A. 0
+A. False
+A. 1
+A. True
+-------------------------
+4. What will be the effect of running the following code?
+class A: def_init_(self,v): self._a = v + 1a = A(0)print(a._a)
+A. 2
+A. The code will raise an AttributeError exception
+A. 0
+A. 1
+-------------------------
+5. What will be the result of executing the following code?
+class A: passclass B(A): passclass C(B): passprint(issubclass(C,A))
+A. it will print 1
+A. it will print False
+A. it will print True
+A. it will raise an exception
+-------------------------
+6. What will be the result of executing the following code?
+class A: def_str_(self): return 'a'class B: def_str_(self): return 'b'class C(A, B): passo = C() print(o)
+A. it will print b
+A. it will print c
+A. it will print a
+A. it will raise an exception
+-------------------------
+7. What will be the result of executing the following code?
+class A: def a(self): print('a')class B: def a(self): self.a()o = C()o.c()
+A. it will raise an exception
+A. it will print a
+A. it will print c
+A. it will print b
+-------------------------
+8. What will be the result of executing the following code?
+try: raise Exception(1,2,3)except Exception as e: print (len(e.args))
+A. it will print 1
+A. it will print 2
+A. it will raise as unhandled exception
+A. it will print 3
+-------------------------
+9. What will be the output of the following code?
+class A: X = 0 def __init__(self,v = 0): self.Y = v A.X += va = A()b = A(1)c = A(2)print(c.X)
+A. 2
+A. 3
+A. 0
+A. 1
+-------------------------
+10. If the class’s constructor is declared as below, which one of the assignments is valid?
+class Class: def __init__(self): pass
+A. object = Class
+A. object = Class()
+A. object = Class(self)
+A. object = Class(object)
+-------------------------
+11. What will be the result of executing the following code?
+def f(x): try: x = x / x except: print("a",end='') else: print("b",end='') finally: print("c",end='')f(1)f(0)
+A. it will raise an unhandled exception
+A. it will print bcac
+A. it will print acac
+A. it will print bcbc
+-------------------------
+12. If there is a superclass named A and a subclass named B, which one of the presentedinvocations should you put instead of the comment?
+class A: def __init__(self): self.a = 1class B(A): def __init__(self): # put selected line here. self.b = 2
+A. A.__init__(self)
+A. __init__()
+A. A.__init__()
+A. A.__init__(1)
+-------------------------
+13. What will be the result of executing the following code?
+class A: def__init__(self): passa = A(1) print(hasattr(a,'A'))
+A. 1
+A. False
+A. it will raise an exception
+A. True
+-------------------------
+14. What will be the result of executing the following code?
+class A: def__init__(self): return 'a'class B(A): def__init__(self): return 'b'class c(B): passo = C()print(o)
+A. it will print c
+A. it will print b
+A. it will print a
+A. it will raise an exception
+-------------------------
+15. What will be the output of the following code?
+class A: def__init__(self,v = 1): self.v =v def set(self,v): self.v = v return va = A()print(a.set(a.v + 1))
+A. 2
+A. 1
+A. 3
+A. 0
+-------------------------
+16. What will be the result of executing the following code?
+class A: v = 2class B(A): v = 1class C(B): passo =C()print(o.v)
+A. it will raise an exception
+A. it will print 2
+A. it will print an empty line
+A. it will print 1
+-------------------------

@@ -15,7 +15,6 @@ and moves to the next question.
 After all questions have been answered, the script displays the user's score and the cumulative percentage of correct answers.
 """
 
-from sample_01 import quiz
 import streamlit as st
 import time
 import available_exams

@@ -3,6 +3,16 @@ from quiz_struct import QuizQuestion
 import re
 
 def parse_question_line(line):
+    """
+    Parses a line of text containing a question and returns the question ID and question text.
+
+    Args:
+        line (str): The line of text containing the question.
+
+    Returns:
+        tuple: A tuple containing the question ID (int) and question text (str).
+               If the line does not match the expected format, returns (None, None).
+    """
     match = re.match(r'(\d{1,2})\.\s*(.*)', line)
     if match:
         question_id = int(match.group(1))
@@ -10,7 +20,20 @@ def parse_question_line(line):
         return question_id, question_text
     else:
         return None, None
+    
+
 def parse_quiz_file(file_path):
+    """
+    Parses a quiz file and returns a dictionary containing the quiz questions.
+
+    Args:
+        file_path (str): The path to the quiz file.
+
+    Returns:
+        dict: A dictionary containing the quiz questions, where the keys are the question IDs
+              and the values are instances of the QuizQuestion class.
+
+    """
     with open(file_path, 'r') as f:
         lines = f.readlines()
 
@@ -51,6 +74,15 @@ def parse_quiz_file(file_path):
     return quiz
 
 def parse_answers_file(file_path):
+    """
+    Parses a file containing answers and returns a dictionary of answers.
+
+    Args:
+        file_path (str): The path to the file containing the answers.
+
+    Returns:
+        dict: A dictionary where the keys are question IDs and the values are lists of answers.
+    """
     with open(file_path, 'r') as f:
         lines = f.readlines()
 
@@ -66,7 +98,7 @@ def parse_answers_file(file_path):
 
 
 # Define the path to the file on the Desktop
-desktop_path = os.path.join(os.path.expanduser("~"), "Desktop/00_PythonWIP")
+desktop_path = os.path.join(os.path.expanduser("~"), "Desktop/00_PythonWIP/data")
 
 quiz = parse_quiz_file(os.path.join(desktop_path, 'pcep_pe1_summary_q.dat'))
 

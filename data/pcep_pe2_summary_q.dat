@@ -1,0 +1,285 @@
+1. The following code:
+x = "\\\\"print(len(x))
+A. will print 1
+A. will print 2
+A. will cause an error
+A. will print 3
+-----------------
+2. What information can be read using the uname function provided by the os module? (Select two answers)
+import osos.mkdir('pictures')os.chdir('pictures')print(os.getcwd())
+A. Last login date.
+A. Current path
+A. Operating system name
+A. Hardware identifier
+-----------------
+3. The following statement:
+assert var != 0
+A. is erroneous
+A. has no effect
+A. will stop the program when var == 0
+A. will stop the program when var !=0
+-----------------
+4. What is the except output of the following code?
+class A: A = 1 def __init__(self): self.a = 0print(hasattr(A, 'a'))
+A. 0
+A. True
+A. 1
+A. False
+-----------------
+5. What is the excepted result of the following code?
+from datetime import timedeltadelta = timedelta(weeks = 1, days = 7, hours = 11)print(delta * 2)
+A. 28 days, 22:00:00
+A. 2 weeks, 14 days, 22 hours
+A. 7 days, 22:00:00
+A. The code will raise an exception
+-----------------
+6. What is the excepted output of the following code?
+class A: def __init__(self, v=2) def set(self, v=1): self.v +=v return self.va = A()b = ab.set()print(a.v)
+A. 1
+A. 0
+A. 2
+A. 3
+-----------------
+7. What is the expected effect of running the following code?
+class A: def __init__(self, v): self.__a = v + 1a = A(0)print(a.__a)
+A. The code will raise an AttributeError except
+A. The code will print 2
+A. The code will print 0
+A. The code will print 1
+-----------------
+8. Knowing that a function named fun() resides in a module named mod, and was imported usingthe following statement:
+from mod import fun
+choose the right to invoke the fun() function:
+A. mod:fun()
+A. mod::fun()
+A. fun()
+A. mod.fun()
+-----------------
+9. What output will appear after running the following snippet?
+A. The number of all the entities residing in the math module
+A. A string containing the fully qualified name of the module
+A. An error message
+A. A list of all the entities residing in the math module
+-----------------
+10. Look at the code below:
+import random## Insert lines of code here.#print(a, b,
+Which lines of code would you insert so that it is possible for the program to output the followingresult:
+6 82 0
+A. a = random.randint(0, 100) b = random.randrange(10, 100, 3) c = random.choice((0, 100, 3))
+A. a = random.choice((0, 100, 3)) b = random.randrange(10, 100, 3) c = random.randint(0, 100)
+A. a = random.randrange(10, 100, 3) b = random.randint(0, 100) c = random.choice((0, 100, 3))
+A. a = random.randint(0, 100)b = random.choice((0, 100, 3))c = random.randrange(10, 100, 3)
+-----------------
+11. What is the expected result of the following code?
+from datetime import datetimedatetime_1 = datetime(2019, 11, 27, 11, 27, 22)datetime_2 = datetime(2019, 11, 27, 0, 0, 0)print(datetime_1 - datetime_2)
+A. o days
+A. 0 days, 11:27:22
+A. 11:27:22
+A. 11 hours, 27 minutes, 22 seconds
+-----------------
+12. What is the expected result of the following code?
+import calendarcalendar.setfirstweekday(calendar.SUNDAY)print(calendar.weekheader(3))
+A. Su Mo Tu We Th We Fr Sa
+A. Sun Mon Tue Wed Thu Fri Sat
+A. Tu
+A. Tue
+-----------------
+13. what is the expected result of executing the following code?
+class A: def a(self): print('a')class B: def a(self): print('b')class C(B, A): def c(self): self.a()o = C()o.c()
+A. The code will print c
+A. The code will raise an exception
+A. The code will print b
+A. The code will print a
+-----------------
+14. Look at the following code:
+numbers [0, 2, 7, 9, 10]# Insert line of code here.print(list(foo))
+Which line would you insert in order for the program to produce the expected output?
+[0, 4, 49, 81, 100]
+A. foo = lambda num: num ** 2, numbers
+A. foo = lambda num: num * 2, numbers)
+A. foo = filter(lambda num: num ** 2, numbers)
+A. foo = map(lambda num : num ** 2, numbers)
+-----------------
+15. What is the expected result of executing the following code?
+class I: def __init__(self): self.s = 'abc' self.i = 0 def __init__(self): return self def __next__(self): if self.i == len(self.s): raise StopIteration v = self.s[self.i] self.i +=1 return vfor x in I(): print(x, end='')
+A. The code will print 210
+A. The code will print abc 
+A. The code will print 012
+A. The code will print cba
+-----------------
+16. The compiled Python bytecode is stored in files which have their names ending with:
+A. py
+A. pyb
+A. pc
+A. pyc
+-----------------
+17. Which pip command would you use to uninstall a previously install package?
+A. pip delete packagename
+A. pip –uninstall packagename
+A. pip –remove packagename
+A. pip uninstall packagename
+-----------------
+18. What is the excepted result of executing the following code?
+try: raise Exception(1, 2, 3)except Exception as e: print(len(e.args))
+A. The code will raise an unhandled exception
+A. The code will print 2
+A. The code will print 3
+A. The code will print 1
+-----------------
+19. What is the excepted result of the following snippet?
+try: raise Exceptionexcept BaseException: print("a")except Exception: print("b")except: print("c")
+A. b
+A. a
+A. An error message
+A. 1
+-----------------
+20. What is the expected result of executing the following code?
+class A: passclass B(A): passclass C(B): passprint(issubclass(A, C))
+A. The code will print Ture
+A. The code will print 1
+A. The code will print False
+A. The code will raise an exception
+-----------------
+21. If you want to fill a byte array with data read in from a stream, which method you can use?
+A. The read() method
+A. The readbytes() method
+A. The readfrom() method
+A. The readinto() method
+-----------------
+22. The following code:
+print(float("1.3"))
+A. will print 1.3
+A. will print 13
+A. will print 1,3
+A. will raise a ValueError exception
+-----------------
+23. The following code:
+print(chr(ord('p) + 2))
+will print:
+A. q
+A. s
+A. r
+A. t
+-----------------
+24. If there are more than one except: branch after the try: clause, we can say that:
+A. exactly one except: block will be executed
+A. one or more except: blocks will be executed
+A. not more than one except: block will be executed
+A. none of the except: blocks will be executed
+-----------------
+25. If the class constructor is declared in the following way:
+class Class: def __init__(self, vla = 0): pass
+which one of the assignments is invalid?
+A. object = Class(1)
+A. object = Class(None)
+A. object = Class(1, 2)
+A. object = Class()
+-----------------
+26. What is the expected result of the following snippet?
+try: raise Exceptionexcept: print("c")except BaseException: print("a")except Exception: print("b")
+A. The code will cause a syntax error
+A. 1
+A. b
+A. a
+-----------------
+27. What is the expected result of the following code?
+def my_fun(n): s = '+' for i in range(n): s += s yield s for x in my_fun(2): print(x, end='')
+A. The code will print +
+A. The code will print +++
+A. The code will print ++
+A. The code will print ++++++
+-----------------
+28. Look at the following code:
+numbers = [i*i for i in range(5)]# Insert line of code here.print(foo)
+Which line would you insert in order for the program to produce the expected output?
+[1, 9]
+A. foo = list(filter(lambda x: x % 2, numbers))
+A. foo = list(filter(lambda x: x / 2, numbers))
+A. foo = list(map(lambda x: x % 2, numbers))
+A. foo = list(map(lambda x: x // 2, numbers))
+-----------------
+29. What is the expected result of executing the following code?
+def o(p): def q(): return '*' * p return qr = o(1)s = o(2)print(r() + s())
+A. The code will print ***
+A. The code will print ****
+A. The code will print *
+A. The code will print **
+-----------------
+30. The following statement:
+from a.b import c
+causes the import of:
+A. entity a from module b from package c
+A. entity b from module a from package c
+A. entity c from module a from package b
+A. entity c from module b from package a
+-----------------
+31. The sys.stderr stream is normally associated with:
+A. the keyboard
+A. the printer
+A. a null device
+A. the screen
+-----------------
+32. What will be the output of the following code, located in the p.py file?
+print(__name__)
+A. main
+A. p.py
+A. __main__
+A. __p.py__
+-----------------
+33. Assuming that the open() invocation has gone successfully, the following snippet:
+for x in open('file', 'rt')) print(x)
+will:
+A. read the file character by character
+A. read the file line by line
+A. read the whole file at once
+A. cause an exception
+-----------------
+34. If a is a stream opened in read mod, the following line:
+q = s.read(1)
+will read:
+A. one line from the stream
+A. one kilobyte from the stream
+A. one buffer from the stream
+A. one character from the stream
+-----------------
+35. The following line of code:
+for line in open('text.txt', 'rt'):
+A. is invalid because open returns nothing
+A. is invalid because open returns a non-iterable object
+A. is invalid because open returns an iterable object
+A. may be valid if line is a list
+-----------------
+36. What is the expected result of the following code?
+import osos.mkdir('pictures')os.chdir('pictures')print(os.getcwd())
+A. The code will print the owner of the created directory
+A. The code will print the content of the created directory
+A. The code will print the name of the created directory
+A. The code will print the path to the created directory
+-----------------
+37. Assuming that the following three files a.py, and c.py reside in the same directory, what willbe the output produced after running the c.py file?
+# file a.pyprint("a", end='')# file b.pyimport aprint("b", end='')# file c.pyprint("c", end='')import aimport b
+A. cab
+A. cab
+A. abc
+A. bac
+-----------------
+38. What is the expected result of executing the following code?
+class A: def __init__(self): passa = A(1)print(hasattr(a, 'A'))
+A. The code will print 1
+A. The code will raise an exception
+A. The code will print False
+A. The code will print True
+-----------------
+39. The following code:
+x = " \\"print(len(x))
+A. will print 1
+A. will print 3
+A. will print 2
+A. will cause an error
+-----------------
+40. Which of the following commands would you use to check pip ‘s version? (Select two answers)
+A. pip version
+A. pip --version
+A. pip–version
+A. pip3 --version
+-----------------

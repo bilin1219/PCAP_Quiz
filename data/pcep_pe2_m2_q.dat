@@ -1,0 +1,105 @@
+1. The following code:
+print(ord('c') - ord('a'))
+prints:
+A. 0
+A. 2
+A. 3
+A. 1
+--------------------
+2. The following code:
+print (float("1, 3" ))
+A. prints 1, 3
+A. raises a ValueError exception
+A. prints 1.3
+A. prints 13
+--------------------
+3. The top-most Python exception is called:
+A. TopException
+A. Exception
+A. BaseException
+A. PythonException
+--------------------
+4. The following statement:
+assert var == 0
+A. is erroneous
+A. will stop the program when var != 0
+A. has no effect
+A. will stop the program when var == 0
+--------------------
+5. UNICODE is a standard:
+A. used by coders from universities
+A. honored by the whole universe
+A. like ASCII, but much more expansive
+A. for coding floating-point numbers
+--------------------
+6. ASCII is:
+A. a predefined Python variable name
+A. a standard Python module name
+A. a character name
+A. short for American Standard Code for Information Interchange
+--------------------
+7. The following code:
+print(3 * 'abc' +'xyz')
+prints: 
+A. xyzxyzxyzxyz
+A. abcabcxyzxyz
+A. abcabcabcxyz
+A. abcxyzxyzxyz
+--------------------
+8. UTF-8 is:
+A. a Python version name
+A. the 9th version of the UTF standard
+A. a form of encoding Unicode code points
+A. a synonym for byte
+--------------------
+9. Entering the try: block implies that:
+A. all of the instructions from this block will be executed
+A. some of the instructions from this block may not be executed
+A. the block will be omitted
+A. none of the instructions from this block will be executed
+--------------------
+10. What is the expected output of the following code?
+try print("5"/0)except ArithmeticError: print("arith")except ZeroDivisionError: print("zero")except: print("some")
+A. zero
+A. 0
+A. some
+A. arith
+--------------------
+11. The unnamed except: block:
+A. must be the first one
+A. can be placed anywhere
+A. cannot be used if any named block has been used
+A. must be the last one
+--------------------
+12. The following code:
+print('Mike' > " Mikey")
+prints:
+A. 0
+A. 1
+A. True
+A. False
+--------------------
+13. The following code:
+print(chr(ord('z') - 2))
+prints:
+A. z
+A. y
+A. a
+A. x
+--------------------
+14. The following code:
+x = '\' ' print(len(x))
+prints:
+A. 3
+A. 2
+A. 20
+A. 1
+--------------------
+15. Which of the following are examples of Python built-in concrete exceptions?(Select twoanswers)
+A. ArithemticError
+A. IndexError
+A. BaseException
+A. ImportError
+A. 3.7
+A. 50
+--------------------

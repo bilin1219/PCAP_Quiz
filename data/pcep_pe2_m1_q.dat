@@ -1,0 +1,112 @@
+1. Knowing that a function named fun() resides in a module named mod , choose thecorrect way to import it:
+A. from mod import fun
+A. import fun from mod
+A. from fun import mod
+A. import fun
+------------------------
+2. What is the expected output of the following code?
+from random import randintfor i in range(2):print (randint(1,2), end='')
+A. 12, or 21
+A. there are millions of possible combinations, and the exact output cannot be predicted
+A. 12
+A. 11, 12, 21, or 22
+------------------------
+3. During the first import of a module, Python deploys the pyc files in the directory called:
+A. mymodules
+A. __init__
+A. hashbang
+A. __pycache__
+------------------------
+4. A list of package’s dependencies can be obtained from pip using its command named:
+A. deps
+A. show
+A. dir
+A. list
+------------------------
+5. What is the expected value of the result variable after the following code is executed?
+import mathresult = math.e != math.pow(2, 4)print(int(result))
+A. 0
+A. 1
+A. False
+A. True
+------------------------
+6. The pip list command presents a list of:
+A. available pip commands
+A. outdated local package
+A. locally installed package
+A. all packages available at PyPI
+------------------------
+7. How to use pip to remove an installed package?
+A. pip --uninstall package
+A. pip remove package
+A. pip install --uninstall package
+A. pip uninstall package
+------------------------
+8. The following statement from a.b import c causes the import of:
+A. entity a from module b from package c
+A. entity c from module a from package b 
+A. entity b from module a from package c
+A. entity c from module b from package a
+------------------------
+9. The pyc file contains:
+A. a Python interpreter
+A. compiled Python code
+A. Python source code
+A. a Python compiler
+------------------------
+10. A predefined Python variable that stores the current module name is called:
+A. __name__
+A. __mod__
+A. __modname__
+A. __module__
+------------------------
+11. What is true about the pip search command? (Select three answers)
+A. all its searches are limited to locally installed packages
+A. it needs working internet connection to work
+A. it searches through all PyPI packages
+A. it searches through package names only
+------------------------
+12. When a module is imported, its contents:
+A. are executed once (implicitly)
+A. are ignored
+A. are executed as many times as they are imported
+A. may be executed (explicitly)
+------------------------
+13. Choose the true statements. (Select two answers)
+A. The version function from the platform module returns a string with your Python version
+A. The processor function from the platform module returns an integer with the number of processescurrently running in your OS
+A. The version function from the platform module returns a string with your OS version
+A. The system function from the platform module returns a string with your OS name
+------------------------
+14. What is true about the pip install command? (Select two answers)
+A. it allows the user to install a specific version of the package
+A. it installs a package system-wide only when the --system option is specified
+A. it installs a package per user only when the --user option is specified
+A. it always installs the newest package version and it cannot be changed
+------------------------
+15. Knowing that a function named fun() resides in a module named mod, and it has beenimported using the following line:
+import mod
+Choose the way it can be invoked in your code:
+A. mod->fun()
+A. mod::fun()
+A. mod.fun()
+A. fun()
+------------------------
+16. The digraph written as #! is used to:
+A. tell a Unix or Unix-like OS how to execute the contents of a Python file
+A. tell an MS Windows OS how to execute the contents of a Python file
+A. create a docstring
+A. make a particular module entity a private one
+------------------------
+17. A function which returns a list of all entities available in a module is called:
+A. entities()
+A. content()
+A. dir()
+A. listmodule()
+------------------------
+18. What is true about updating already installed Python packages?
+A. it can be done only by uninstalling and installing the package once again
+A. it’s an automatic process which doesn’t require any user attention
+A. it can be done by reinstalling the package using the reinstall command
+A. it’s performed by the install command accompanied by the -U option
+------------------------

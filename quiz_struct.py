@@ -1,6 +1,3 @@
-import sample_01
-
-
 class QuizQuestion:
     def __init__(self, question, code, directive, output, answer_list, correct=None):
         self.question = question
