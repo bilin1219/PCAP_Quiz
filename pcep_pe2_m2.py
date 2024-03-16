@@ -130,7 +130,7 @@ quiz = {
                      ),
     14: QuizQuestion('''The following code:''',
                      '''
-                     x = '\' '  
+                     x = '\\\' '  
                      print(len(x))''',
                      '''prints:''',
                      None,

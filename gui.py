@@ -28,6 +28,11 @@ with st.container():
     st.write("---")
     if 'exam_name' in st.session_state and st.session_state.exam_name != exam_name:
         st.session_state.exam_name = exam_name
+        del st.session_state['question_num']
+        del st.session_state['correct_answers']
+        del st.session_state['user_answer']
+        del st.session_state['exam_start_time']
+        del st.session_state['exam_duration']
         st.rerun()
 
 # Initialize the session state

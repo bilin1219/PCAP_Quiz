@@ -19,10 +19,10 @@ quiz = {
                     ),
     2: QuizQuestion('''What is the expected result of executing the code?''',
                                        '''
-                                       def I():  
-                                        s = 'abcdef'  
-                                        for c in s[::2]:  
-                                            yield c  
+                                        def I():  
+                                            s = 'abcdef'  
+                                            for c in s[::2]:  
+                                                yield c  
 
                                         for x in I():  
                                             print(x, end=' ')''',

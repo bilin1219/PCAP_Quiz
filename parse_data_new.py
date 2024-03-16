@@ -98,12 +98,12 @@ def parse_answers_file(file_path):
 
 
 # Define the path to the file on the Desktop
-desktop_path = os.path.join(os.path.expanduser("~"), "Desktop/00_PythonWIP/data")
+desktop_path = os.path.join(os.path.expanduser("~"), "Desktop/00_PythonWIP/dev/PCAP_Quiz/data")
 
-quiz = parse_quiz_file(os.path.join(desktop_path, 'pcep_pe1_summary_q.dat'))
+quiz = parse_quiz_file(os.path.join(desktop_path, 'pcep_pe1_m2_q.dat'))
 
 # Define the questions, correct answers, and possible answers
-answers = parse_answers_file(os.path.join(desktop_path, 'pcep_pe1_summary_a.dat'))
+answers = parse_answers_file(os.path.join(desktop_path, 'pcep_pe1_m2_a.dat'))
 for answer_id, answer in answers.items():
     #print(answer_id, answer)
     quiz[answer_id].set_correct_answers(answer)

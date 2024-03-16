@@ -1,8 +1,8 @@
 1. The \n digraph forces the print() function to:
-stop its execution
-duplicate the character next to the digraph
-break the output line
-output exactly two characters: \ and n
+A. stop its execution
+A. duplicate the character next to the digraph
+A. break the output line
+A. output exactly two characters: \ and n
 --------------
 2. What is the output of the following snippet if the user enters two lines containing 2 and 4respectively?
 x = int(input())y = int(intpu())x = x / yy = y / xprint(y)

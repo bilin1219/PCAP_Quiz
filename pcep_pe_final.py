@@ -13,7 +13,9 @@ quiz = {1: QuizQuestion('''What is the expected output of the following snippet?
                         '''
                         a = True  
                         b = False  
-                        a = a or bb = a and ba = a or b  
+                        a = a or b  
+                        b = a and b  
+                        a = a or b  
                         print(a, b)''',
                         None,
                         None,
@@ -189,7 +191,7 @@ quiz = {1: QuizQuestion('''What is the expected output of the following snippet?
             None,
             None,
             None,
-            {'A': 'Start its name with __or__', 'B': 'Start its name with a capital letter',
+            {'A': 'Start its name with __ or _', 'B': 'Start its name with a capital letter',
              'C': 'Use its number instead of its name', 'D': 'Build its name with lowercase letters only'},
             ['A'],
         ),
@@ -422,7 +424,13 @@ quiz = {1: QuizQuestion('''What is the expected output of the following snippet?
         39: QuizQuestion('''What is the expected output of the following snippet?''',
                          '''
                          try: 
-                            raise Exceptionexcept BaseException: print("a", end='')else: print("b", end='')finnaly: print("c")''',
+                            raise Exception  
+                         except BaseException:  
+                            print("a", end='')  
+                         else:  
+                            print("b", end='')  
+                         finnaly:  
+                            print("c")''',
                          None,
                          None,
                          {'A': 'bc', 'B': 'a', 'C': 'ab', 'D': 'ac'},
@@ -501,7 +509,9 @@ quiz = {1: QuizQuestion('''What is the expected output of the following snippet?
                          ['D'],
                          ),
         46: QuizQuestion('''What is the expected behavior of the following code?''',
-                         '''x = """"""print(len(x))''',
+                         '''x = """  
+                         """  
+                         print(len(x))''',
                          None,
                          None,
                          {'A': 'The code will output 2', 'B': 'The code will output 3',
@@ -582,7 +592,8 @@ quiz = {1: QuizQuestion('''What is the expected output of the following snippet?
                          d = {1: 0, 2: 1, 3: 2, 0: 1}  
                          x = 0  
                          for y in range(len(d)):  
-                            x = d[x]print(x)''',
+                            x = d[x]  
+                         print(x)''',
                          None,
                          None,
                          {'A': 'The code will output 0', 'B': 'The code will output 1',
@@ -638,7 +649,7 @@ quiz = {1: QuizQuestion('''What is the expected output of the following snippet?
                          ),
         58: QuizQuestion('''What is the expected behavior of the following code?''',
                          '''
-                         x = "\"  
+                         x = "\\"  
                          print(len(x))''',
                          None,
                          None,

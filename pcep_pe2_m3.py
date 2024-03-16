@@ -15,12 +15,13 @@ quiz = {1: QuizQuestion('''What will be the result of executing the following co
                             def_init_(self,msg):  
                                 Exception._init_(self,msg + msg)  
                                 self.args = (msg,)  
-                                try:  
-                                    raise Ex('ex')  
-                                except Ex as e:  
-                                    print(e)  
-                                except Exception as e:  
-                                    print(e)''',
+
+                        try:  
+                            raise Ex('ex')  
+                        except Ex as e:  
+                            print(e)  
+                        except Exception as e:  
+                            print(e)''',
                         None,
                         None,
                         {'A': 'it will print ex', 'B': 'it will print exex', 'C': 'it will print an empty line',
@@ -38,7 +39,8 @@ quiz = {1: QuizQuestion('''What will be the result of executing the following co
                         '''
                         class A:  
                             A = 1  
-                            print(hasattr(A, 'A'))''',
+
+                        print(hasattr(A, 'A'))''',
                         None,
                         None,
                         {'A': '0', 'B': 'False', 'C': '1', 'D': 'True'},
@@ -48,7 +50,7 @@ quiz = {1: QuizQuestion('''What will be the result of executing the following co
                         '''
                         class A:  
                             def_init_(self,v):  
-                            self._a = v + 1  
+                                self._a = v + 1  
 
                         a = A(0)  
                         print(a._a)''',
@@ -79,11 +81,11 @@ quiz = {1: QuizQuestion('''What will be the result of executing the following co
                         '''
                         class A:  
                             def_str_(self):  
-                            return 'a'  
+                                return 'a'  
 
                         class B:  
                             def_str_(self):  
-                            return 'b'  
+                                return 'b'  
 
                         class C(A, B):  
                             pass  
@@ -167,7 +169,8 @@ quiz = {1: QuizQuestion('''What will be the result of executing the following co
                             finally:  
                                 print("c",end='')  
 
-                            f(1)f(0)''',
+                            f(1)  
+                            f(0)''',
                          None,
                          None,
                          {'A': 'it will raise an unhandled exception', 'B': 'it will print bcac',
@@ -193,7 +196,7 @@ quiz = {1: QuizQuestion('''What will be the result of executing the following co
         13: QuizQuestion('''What will be the result of executing the following code?''',
                          '''
                          class A:  
-                            def__init__(self):  
+                            def __init__(self):  
                                 pass  
                                 
                          a = A(1)  
@@ -206,11 +209,11 @@ quiz = {1: QuizQuestion('''What will be the result of executing the following co
         14: QuizQuestion('''What will be the result of executing the following code?''',
                          '''
                          class A:  
-                            def__init__(self):  
+                            def __init__(self):  
                                 return 'a'  
 
                          class B(A):  
-                            def__init__(self):  
+                            def __init__(self):  
                                 return 'b'  
 
                          class c(B):  
@@ -227,8 +230,9 @@ quiz = {1: QuizQuestion('''What will be the result of executing the following co
         15: QuizQuestion('''What will be the output of the following code?''',
                          '''
                          class A:  
-                            def__init__(self,v = 1):  
+                            def __init__(self,v = 1):  
                                 self.v = v  
+
                             def set(self,v):  
                                 self.v = v  
                                 return v  
@@ -244,12 +248,14 @@ quiz = {1: QuizQuestion('''What will be the result of executing the following co
                          '''
                          class A:  
                             v = 2  
+                            
                          class B(A):   
                             v = 1  
+
                          class C(B):  
                             pass  
                             
-                         o =C()  
+                         o = C()  
                          print(o.v)''',
                          None,
                          None,

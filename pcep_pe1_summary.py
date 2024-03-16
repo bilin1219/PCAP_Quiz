@@ -262,7 +262,10 @@ quiz = {1: QuizQuestion('''What is the output of the following snippet?''',
                          ['D'],
                          ),
         23: QuizQuestion('''What value will be assigned to the x variable?''',
-                         '''z = 0y = 0x = y < z and z > y or y > z and z < y''',
+                         '''
+                         z = 0  
+                         y = 0  
+                         x = y < z and z > y or y > z and z < y''',
                          None,
                          None,
                          {'A': 'False', 'B': '0', 'C': '1', 'D': 'True'},

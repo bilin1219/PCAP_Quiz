@@ -102,7 +102,7 @@ quiz = {1: QuizQuestion('''How many stars (*) will the following snippet send to
                         my_list_2 = []  
                         for v in my_list_1:  
                           my_list_2.insert(0, v)  
-                          print(my_list_2)''',
+                        print(my_list_2)''',
                         None,
                         None,
                         {'A': '[1, 2, 3]', 'B': '[3, 2, 1]', 'C': '[3, 3, 3]', 'D': '[1, 1, 1]'},
@@ -157,6 +157,7 @@ quiz = {1: QuizQuestion('''How many stars (*) will the following snippet send to
                          c = a & b  
                          d = a | b  
                          e = a ^ b  
+                            
                          print(c + d + e)''',
                          None,
                          None,

@@ -71,6 +71,7 @@ quiz = {1: QuizQuestion('''The following code:''',
                             def set(self, v=1):  
                                 self.v += v  
                                 return self.v  
+
                         a = A()  
                         b = a  
                         b.set()  
@@ -193,7 +194,7 @@ quiz = {1: QuizQuestion('''The following code:''',
                                 self.s = 'abc'  
                                 self.i = 0   
 
-                            def __init__(self):  
+                            def __iter__(self):  
                                 return self   
                                 
                             def __next__(self):  
@@ -242,7 +243,13 @@ quiz = {1: QuizQuestion('''The following code:''',
         19: QuizQuestion('''What is the excepted result of the following snippet?''',
                          '''
                          try:  
-                            raise Exceptionexcept BaseException: print("a")except Exception: print("b")except: print("c")''',
+                            raise Exceptionexcept  
+                         BaseException:  
+                            print("a")  
+                         except Exception:  
+                            print("b")  
+                         except:  
+                            print("c")''',
                          None,
                          None,
                          {'A': 'b', 'B': 'a', 'C': 'An error message', 'D': '1'},
@@ -315,7 +322,8 @@ quiz = {1: QuizQuestion('''The following code:''',
         26: QuizQuestion('''What is the expected result of the following snippet?''',
                          '''
                          try:  
-                            raise Exceptionexcept:  
+                            raise Exception  
+                         except:  
                             print("c")  
                          except BaseException:  
                             print("a")  
@@ -392,7 +400,7 @@ quiz = {1: QuizQuestion('''The following code:''',
                          '''print(__name__)''',
                          None,
                          None,
-                         {'A': 'main', 'B': 'p.py', 'C': '__main__', 'D': '__p.py__'},
+                         {'A': 'main', 'B': 'p.py', 'C': '\_\_main\_\_', 'D': '\_\_p.py\_\_'},
                          ['C'],
                          ),
         33: QuizQuestion('''Assuming that the open() invocation has gone successfully, the following snippet:''',
@@ -471,7 +479,7 @@ quiz = {1: QuizQuestion('''The following code:''',
                          ),
         39: QuizQuestion('''The following code:''',
                          '''
-                         x = " \\"  
+                         x = " \\\\"  
                          print(len(x))''',
                          None,
                          None,

@@ -11,10 +11,10 @@ quiz_link = "[Click here to learn more >](https://pythoninstitute.org/pcap)"
 # Define the questions, correct answers, and possible answers
 quiz = {
     1: QuizQuestion('''The \n digraph forces the print() function to:''',
-                    '''stop its execution''',
-                    '''duplicate the character next to the digraph''',
-                    '''break the output line''',
-                    {},
+                    None,
+                    None,
+                    None,
+                    {'A': 'stop its execution', 'B': 'duplicate the character next to the digraph', 'C': 'break the output line', 'D': 'output exactly two characters: \\ and n'},
                     ['C'],
                     ),
     2: QuizQuestion(
@@ -22,7 +22,10 @@ quiz = {
         '''
         x = int(input())  
         y = int(intpu())  
-        x = x / yy = y / x  
+          
+        x = x / y  
+        y = y / x  
+          
         print(y)''',
         None,
         None,
@@ -117,7 +120,7 @@ quiz = {
         None,
         None,
         None,
-        {'A': '20.12*10^8', 'B': '20E12.8', 'C': '20.12E8.0', 'D': '20.12Eo'},
+        {'A': '20.12*10^8', 'B': '20E12.8', 'C': '20.12E8.0', 'D': '20.12E8'},
         ['D'],
     ),
     13: QuizQuestion(
@@ -126,7 +129,7 @@ quiz = {
         x = int(intput())  
         y = int(intput())  
         x = x // y  
-        y = y //x  
+        y = y // x  
         print(y)''',
         None,
         None,
@@ -197,7 +200,7 @@ quiz = {
                      None,
                      None,
                      None,
-                     {'A': 'its value', 'B': 'the argumentâ€™s name specified along with is value',
+                     {'A': 'its value', 'B': 'the argument\'s name specified along with is value',
                       'C': 'its connection with exiting variables',
                       'D': 'its position within the argument list'},
                      ['B'],
